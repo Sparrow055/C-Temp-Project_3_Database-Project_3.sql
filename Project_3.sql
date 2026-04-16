@@ -19,7 +19,7 @@ CREATE TABLE Person (
     Lname   VARCHAR(20) CONSTRAINT Person_Lname_nn NOT NULL,
     Bdate   DATE,
     Sex     CHAR(1) CONSTRAINT Person_Sex_cc CHECK(Sex = 'M' OR Sex = 'F'),
-    Age     NUMBER(2) CONSTRAINT Person_age_cc CHECK((Age >= 18) and (Age <= 30)),
+    Age     NUMBER(2) CONSTRAINT Person_age_cc CHECK((Age >= 18) and (Age <= 99)),
     RelativeID   NUMBER(5));
 
 CREATE TABLE Director (
@@ -58,19 +58,19 @@ CREATE TABLE Cinematographer (
     CinematographerID   NUMBER(5) CONSTRAINT Cinematographer_CinematographerID_PK PRIMARY KEY,
     Name    VARCHAR(50),
     Sex     CHAR(1) CONSTRAINT Cinematographer_Sex_cc CHECK(Sex = 'M' OR Sex = 'F'),
-    Age     NUMBER(2) CONSTRAINT Cinematographer_age_cc CHECK((Age >= 18) and (Age <= 30)));
+    Age     NUMBER(2) CONSTRAINT Cinematographer_age_cc CHECK((Age >= 18) and (Age <= 99)));
 
 CREATE TABLE Composer (
     ScoreID     NUMBER(5) CONSTRAINT Composer_ScoreID_PK PRIMARY KEY,
     Name        VARCHAR(50),
     Sex         CHAR(1) CONSTRAINT Composer_Sex_cc CHECK(Sex = 'M' OR Sex = 'F'),
-    Age         NUMBER(2) CONSTRAINT Composer_age_cc CHECK((Age >= 18) and (Age <= 30)));
+    Age         NUMBER(2) CONSTRAINT Composer_age_cc CHECK((Age >= 18) and (Age <= 99)));
 
 CREATE TABLE Relative (
     RelativeID    NUMBER(5) CONSTRAINT Relative_RelativeID_PK PRIMARY KEY,
     Relative_Name   VARCHAR(30),
     B_Date  DATE,
-    Age     NUMBER(2) CONSTRAINT Relative_age_cc CHECK((Age >= 18) and (Age <= 30)),
+    Age     NUMBER(2) CONSTRAINT Relative_age_cc CHECK((Age >= 18) and (Age <= 99)),
     Sex     CHAR(1) CONSTRAINT Relative_Sex_cc CHECK(Sex = 'M' OR Sex = 'F'),
     Relation    VARCHAR(20));
 
