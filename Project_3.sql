@@ -123,9 +123,14 @@ REFERENCES Film(MovieID);
 
 INSERT INTO Film
 VALUES( 'Batman', 12356, '2:56', 13345, 22375, 12349);
+    INSERT INTO Person 
+        VALUES (13345, 'Matt', 'G', 'Reeves', 1966-4-27, 'M', '59', 09451) /* Has a wife and kid*/
+        INSERT INTO 
 
+        
 INSERT INTO Film
 VALUES( 'Superman', 91921, '2:09', 91821, 61921, 91923);
+    INSERT INTO Person
 
 INSERT INTO Film
 VALUES( 'Justice League', 81972, '2:09', 81973, 81372 , 71972);
