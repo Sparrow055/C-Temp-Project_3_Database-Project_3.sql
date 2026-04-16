@@ -18,9 +18,9 @@ CREATE TABLE Person (
     Minit   CHAR(1),
     Lname   VARCHAR(20) CONSTRAINT Person_Lname_nn NOT NULL,
     Bdate   DATE,
-    Sex     CHAR(1),
-    Age     NUMBER(2) CONSTRAINT Person_Age_nn NOT NULL,
-    Relative_name   VARCHAR(30));
+    Sex     CHAR(1) CONSTRAINT Person_Sex_cc CHECK(Sex = 'M' OR Sex = 'F'),
+    Age     NUMBER(2) CONSTRAINT Person_age_cc CHECK((Age >= 18) and (Age <= 30)),
+    RelativeID   NUMBER(5));
 
 CREATE TABLE Director (
     DirectorID     NUMBER(5) CONSTRAINT Director_DirectorID_PK PRIMARY KEY);
@@ -39,7 +39,7 @@ CREATE TABLE StarIN (
 CREATE TABLE Film (
     Title       VARCHAR(20),
     MovieID     NUMBER(5) CONSTRAINT Film_MovieID_PK PRIMARY KEY,
-    Runtime     TIMESTAMP,
+    Runtime     TIME,
     DirectorID  NUMBER(5),
     CinematographerID   NUMBER(5),
     ScoreID     NUMBER(5));
@@ -49,38 +49,36 @@ CREATE TABLE Genre (
     Movie_Genre     VARCHAR(20));
 
 CREATE TABLE Reviews (
-    No_stars    NUMBER(1),
+    No_stars    NUMBER(1) CONSTRAINT Reviews_No_stars_cc CHECK((No_stars >= 1) and (No_stars <= 5)),
     Comments    VARCHAR(50),
-    MovieID     NUMBER(5)
-    CONSTRAINT reviews_movieID_no_stars_pk PRIMARY KEY(MovieID, No_stars));
+    MovieID     NUMBER(5),
+    CONSTRAINT reviews_MovieID_No_stars_pk PRIMARY KEY (MovieID, No_stars));
 
 CREATE TABLE Cinematographer (
     CinematographerID   NUMBER(5) CONSTRAINT Cinematographer_CinematographerID_PK PRIMARY KEY,
     Name    VARCHAR(50),
-    Sex     CHAR(1),
-    Age     NUMBER(2));
+    Sex     CHAR(1) CONSTRAINT Cinematographer_Sex_cc CHECK(Sex = 'M' OR Sex = 'F'),
+    Age     NUMBER(2) CONSTRAINT Cinematographer_age_cc CHECK((Age >= 18) and (Age <= 30)));
 
 CREATE TABLE Composer (
     ScoreID     NUMBER(5) CONSTRAINT Composer_ScoreID_PK PRIMARY KEY,
     Name        VARCHAR(50),
-    Sex         CHAR(1),
-    Age         NUMBER(2));
+    Sex         CHAR(1) CONSTRAINT Composer_Sex_cc CHECK(Sex = 'M' OR Sex = 'F'),
+    Age         NUMBER(2) CONSTRAINT Composer_age_cc CHECK((Age >= 18) and (Age <= 30)));
 
 CREATE TABLE Relative (
-    RelativeID    NUMBER(5),
+    RelativeID    NUMBER(5) CONSTRAINT Relative_RelativeID_PK PRIMARY KEY,
     Relative_Name   VARCHAR(30),
     B_Date  DATE,
-    Age     NUMBER(2),
-    Sex     CHAR(1),
-    Relation    VARCHAR(20),
-    CONSTRAINT relative_pk PRIMARY KEY(RelatievID, Relative_Name));
+    Age     NUMBER(2) CONSTRAINT Relative_age_cc CHECK((Age >= 18) and (Age <= 30)),
+    Sex     CHAR(1) CONSTRAINT Relative_Sex_cc CHECK(Sex = 'M' OR Sex = 'F'),
+    Relation    VARCHAR(20));
 
 
 
-
-ALTER TABLE Person
-ADD CONSTRAINT person_relative_name_fk FOREIGN KEY(Relative_Name)
-REFERENCES Relative(Relative_Name);
+ALTER TABLE Person 
+ADD CONSTRAINT person_relativeID_fk FOREIGN KEY(RelativeID)
+REFERENCES Relative(RelativeID);
 
 ALTER TABLE Director
 ADD CONSTRAINT director_directorID_fk FOREIGN KEY(DirectorID)
@@ -107,6 +105,10 @@ ADD CONSTRAINT film_cinematographerID_fk FOREIGN KEY(CinematographerID)
 REFERENCES Cinematographer(CinematographerID);
 
 ALTER TABLE Film
+ADD CONSTRAINT film_directorID_fk FOREIGN KEY(DirectorID)
+REFERENCES Director(DirectorID);
+
+ALTER TABLE Film
 ADD CONSTRAINT film_scoreID_fk FOREIGN KEY(ScoreID)
 REFERENCES Composer(ScoreID);
 
@@ -117,7 +119,3 @@ REFERENCES Film(MovieID);
 ALTER TABLE Reviews 
 ADD CONSTRAINT reviews_movieID_fk FOREIGN KEY(MovieID)
 REFERENCES Film(MovieID);
-
-ALTER TABLE Relative
-ADD CONSTRAINT relative_relativeID_fk FOREIGN KEY(RelativeID)
-REFERENCES Person(PersonID);
