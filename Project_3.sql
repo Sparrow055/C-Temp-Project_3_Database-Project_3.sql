@@ -142,7 +142,7 @@ VALUES( 'Batman', 12356, '2:56', 13345, 22375, 12349);
                                                             INSERT INTO Genre
                                                                 VALUES  (12356, 'Action')
                                                                         INSERT INTO Reviews 
-                                                                                VALUES ( '4', 12345)
+                                                                                VALUES ( '4', 12345);
 
         
 INSERT INTO Film
@@ -167,17 +167,88 @@ VALUES( 'Superman', 91921, '2:09', 25962, 61921, 91923);
                                                             INSERT INTO Genre
                                                                 VALUES  (91921, 'Action')
                                                                         INSERT INTO Reviews 
-                                                                                VALUES ( '5', 91921)
+                                                                                VALUES ( '5', 91921);
 
 
 
 
         
 INSERT INTO Film
-VALUES( 'Justice League', 81972, '2:09', 81973, 81372 , 71972);
+VALUES( 'Justice League', 81972, '2:00', 81973, 81372 , 71972)
+    INSERT INTO Person
+            VALUES (81973 , 'Zack', 'E', 'Snyder', 1966-3-01, 'M', '60', 05747) /* Has a wife and kid*/
+        INSERT INTO Relatives
+                 VALUES (09565, ' Deborah Snyder', 1969-3-13, 57, 'F', 'Wife')
+        INSERT INTO Direrctor
+            VALUES 81973
+                  INSERT INTO Producer
+                        VALUES  81973
+                     INSERT INTO Person 
+                        VALUES (61921 , 'Fabian', '', 'Wagner', 1978-10-30, 'M', '47', 08764)  /* Has a wife and kids*/
+                                    
+                            INSERT INTO Cinematographer
+                                VALUES (81372, 'Fabian Wagner', 'M', '47')
+                                    INSERT INTO Person 
+                                        VALUES (75775 , 'Danny', '', 'Elfman', 1953-05-29, 'M', '72', 07684)
+                                                INSERT INTO Composer
+                                                    VALUES (91923, 'Danny Elfman', 'M', '72' )
+                                                            INSERT INTO Genre
+                                                                VALUES  (81972, 'Action')
+                                                                        INSERT INTO Reviews 
+                                                                                VALUES ( '1', 81972);
 
 INSERT INTO Film
-VALUES( 'Supergirl', 58880, '1:45', 56880 , 58840  , 57880);
+VALUES( '300', 23279 , '1:57', 26536, 25877 , 29889 )
+INSERT INTO Person
+            VALUES (26536 , 'Zack', 'E', 'Snyder', 1966-3-01, 'M', '60', 05747) /* Has a wife and kid*/
+        INSERT INTO Relatives
+                 VALUES (09565, ' Deborah Snyder', 1969-3-13, 57, 'F', 'Wife')
+        INSERT INTO Direrctor
+            VALUES 26536
+                  INSERT INTO Producer
+                        VALUES  26536
+                     INSERT INTO Person 
+                        VALUES (61921 , 'Larry', '', 'Fong', 1960-06-30, 'M', '65', 066564)  /* Has a wife and kids*/
+                                    
+                            INSERT INTO Cinematographer
+                                VALUES (81372, 'Larry Fong', 'M', '65')
+                                    INSERT INTO Person 
+                                        VALUES (76566 , 'Tyler', '', 'Bates', 1965-06-05, 'M', '72', 07687)
+                                                INSERT INTO Composer
+                                                    VALUES (91676, 'Tyler Bates', 'M', '60' )
+                                                            INSERT INTO Genre
+                                                                VALUES  (23279, 'Action')
+                                                                        INSERT INTO Reviews 
+                                                                                VALUES ( '3', 23279);
+
+INSERT INTO Film
+VALUES( 'Guardians of the Galaxy 3', 92778 , '2:29', 92644 , 93636  , 93464)
+INSERT INTO Person
+            VALUES (25962 , 'James', 'F', 'Gunn', 1966-8-06, 'M', '59', 09565) /* Has a wife and kid*/
+        INSERT INTO Relatives
+                 VALUES (09565, ' Jennifer Holland', 1987-9-09, 38, 'F', 'Wife')
+        INSERT INTO Direrctor
+            VALUES 25962
+                  INSERT INTO Producer
+                        VALUES  25962
+                     INSERT INTO Person 
+                        VALUES (61921 , 'Henry', '', 'Braham', 1965-10-30, 'M', '60', 083874)  /* Has a wife and kids*/
+                                    
+                            INSERT INTO Cinematographer
+                                VALUES (61921, 'Henry Braham', 'M', '60')
+                                    INSERT INTO Person 
+          /*not accurateish edit now*/              VALUES (78956 , 'John', '', 'Murphy', 1965-03-04, 'M', '61', 05864)
+                                                INSERT INTO Composer
+                                                    VALUES (91923, 'John Murphy', 'M', '61' )
+                                                            INSERT INTO Genre
+                                                                VALUES  (91921, 'Action')
+                                                                        INSERT INTO Reviews 
+                                                                                VALUES ( '5', 91921);
+
+
+
+INSERT INTO Film
+VALUES( 'Supergirl', 58880, '1:45', 56880 , 58840  , 57880)
 
 INSERT INTO Film
 VALUES( 'Iron man', 68014, '2:06', 62014 , 68013  , 64914);
