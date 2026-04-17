@@ -50,7 +50,6 @@ CREATE TABLE Genre (
 
 CREATE TABLE Reviews (
     No_stars    NUMBER(1) CONSTRAINT Reviews_No_stars_cc CHECK((No_stars >= 1) and (No_stars <= 5)),
-    Comments    VARCHAR(50),
     MovieID     NUMBER(5),
     CONSTRAINT reviews_MovieID_No_stars_pk PRIMARY KEY (MovieID, No_stars));
 
@@ -139,15 +138,15 @@ VALUES( 'Batman', 12356, '2:56', 13345, 22375, 12349);
                                     INSERT INTO Person 
                                         VALUES (78956 , 'Michael', '', 'Giacchino', 1967-10-10, 'M', '58', 09676)
                                                 INSERT INTO Composer
-                                                    VALUES (16140, 'Michael Giacchino', 'M', '58' )
+                                                    VALUES (12349, 'Michael Giacchino', 'M', '58' )
                                                             INSERT INTO Genre
                                                                 VALUES  (12356, 'Action')
                                                                         INSERT INTO Reviews 
-                                                                                VALUES ( '4', 'A very nice retelling of a well known story', 12345)
+                                                                                VALUES ( '4', 12345)
 
         
 INSERT INTO Film
-VALUES( 'Superman', 91921, '2:09', 91821, 61921, 91923);
+VALUES( 'Superman', 91921, '2:09', 25962, 61921, 91923);
     INSERT INTO Person
             VALUES (25962 , 'James', 'F', 'Gunn', 1966-8-06, 'M', '59', 09565) /* Has a wife and kid*/
         INSERT INTO Relatives
@@ -157,18 +156,18 @@ VALUES( 'Superman', 91921, '2:09', 91821, 61921, 91923);
                   INSERT INTO Producer
                         VALUES  25962
                      INSERT INTO Person 
-                        VALUES (22375 , 'Henry', '', 'Braham', 1965-10-30, 'M', '60', 083874)  /* Has a wife and kids*/
+                        VALUES (61921 , 'Henry', '', 'Braham', 1965-10-30, 'M', '60', 083874)  /* Has a wife and kids*/
                                     
                             INSERT INTO Cinematographer
-                                VALUES (22375, 'Henry Braham', 'M', '60')
+                                VALUES (61921, 'Henry Braham', 'M', '60')
                                     INSERT INTO Person 
                                         VALUES (78956 , 'John', '', 'Murphy', 1965-03-04, 'M', '61', 05864)
                                                 INSERT INTO Composer
-                                                    VALUES (16140, 'John Murphy', 'M', '61' )
+                                                    VALUES (91923, 'John Murphy', 'M', '61' )
                                                             INSERT INTO Genre
-                                                                VALUES  (12356, 'Action')
+                                                                VALUES  (91921, 'Action')
                                                                         INSERT INTO Reviews 
-                                                                                VALUES ( '5', 'Pure hope injected into my eyeballs', 91921)
+                                                                                VALUES ( '5', 91921)
 
 
 
