@@ -125,14 +125,15 @@ INSERT INTO Film
 VALUES( 'Batman', 12356, '2:56', 13345, 22375, 12349);
     INSERT INTO Person 
         VALUES (13345, 'Matt', 'G', 'Reeves', 1966-4-27, 'M', '59', 09451) /* Has a wife and kid*/
+         INSERT INTO Relatives
+                VALUES (09576, ' Melinda Wang', 1973-5-29, 52, 'F', 'Wife')
         INSERT INTO Direrctor
             VALUES 13345
                   INSERT INTO Producer
                         VALUES  13345
                      INSERT INTO Person 
                         VALUES (22375 , 'Greig', '', 'Fraser', 1966-10-03, 'M', '50', 09576)  /* Has a wife and kids*/
-                                    INSERT INTO Relatives
-                                        VALUES (09576, ' Melinda Wang', 1973-5-29, 52, 'F', 'Wife')
+                                   
                             INSERT INTO Cinematographer
                                 VALUES (22375, 'Greig Fraser', 'M', '50')
                                     INSERT INTO Person 
@@ -148,7 +149,31 @@ VALUES( 'Batman', 12356, '2:56', 13345, 22375, 12349);
 INSERT INTO Film
 VALUES( 'Superman', 91921, '2:09', 91821, 61921, 91923);
     INSERT INTO Person
+            VALUES (25962 , 'James', 'F', 'Gunn', 1966-8-06, 'M', '59', 09565) /* Has a wife and kid*/
+        INSERT INTO Relatives
+                 VALUES (09565, ' Jennifer Holland', 1987-9-09, 38, 'F', 'Wife')
+        INSERT INTO Direrctor
+            VALUES 25962
+                  INSERT INTO Producer
+                        VALUES  25962
+                     INSERT INTO Person 
+                        VALUES (22375 , 'Henry', '', 'Braham', 1965-10-30, 'M', '60', 083874)  /* Has a wife and kids*/
+                                    
+                            INSERT INTO Cinematographer
+                                VALUES (22375, 'Henry Braham', 'M', '60')
+                                    INSERT INTO Person 
+                                        VALUES (78956 , 'John', '', 'Murphy', 1965-03-04, 'M', '61', 05864)
+                                                INSERT INTO Composer
+                                                    VALUES (16140, 'John Murphy', 'M', '61' )
+                                                            INSERT INTO Genre
+                                                                VALUES  (12356, 'Action')
+                                                                        INSERT INTO Reviews 
+                                                                                VALUES ( '5', 'Pure hope injected into my eyeballs', 91921)
 
+
+
+
+        
 INSERT INTO Film
 VALUES( 'Justice League', 81972, '2:09', 81973, 81372 , 71972);
 
