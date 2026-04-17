@@ -8,7 +8,7 @@ DROP TABLE Genre CASCADE CONSTRAINTS;
 DROP TABLE Reviews CASCADE CONSTRAINTS;
 DROP TABLE Cinematographer CASCADE CONSTRAINTS;
 DROP TABLE Composer CASCADE CONSTRAINTS;
-DROP TABLE Relative CASCADE CONSTRAINTS;
+DROP TABLE Relatives CASCADE CONSTRAINTS;
 
 
 
@@ -66,7 +66,7 @@ CREATE TABLE Composer (
     Sex         CHAR(1) CONSTRAINT Composer_Sex_cc CHECK(Sex = 'M' OR Sex = 'F'),
     Age         NUMBER(2) CONSTRAINT Composer_age_cc CHECK((Age >= 18) and (Age <= 99)));
 
-CREATE TABLE Relative (
+CREATE TABLE Relatives (
     RelativeID    NUMBER(5) CONSTRAINT Relative_RelativeID_PK PRIMARY KEY,
     Relative_Name   VARCHAR(30),
     B_Date  DATE,
@@ -125,7 +125,24 @@ INSERT INTO Film
 VALUES( 'Batman', 12356, '2:56', 13345, 22375, 12349);
     INSERT INTO Person 
         VALUES (13345, 'Matt', 'G', 'Reeves', 1966-4-27, 'M', '59', 09451) /* Has a wife and kid*/
-        INSERT INTO 
+        INSERT INTO Direrctor
+            VALUES 13345
+                  INSERT INTO Producer
+                        VALUES  13345
+                     INSERT INTO Person 
+                        VALUES (22375 , 'Greig', '', 'Fraser', 1966-10-03, 'M', '50', 09576)  /* Has a wife and kids*/
+                                    INSERT INTO Relatives
+                                        VALUES (09576, ' Melinda Wang', 1973-5-29, 52, 'F', 'Wife')
+                            INSERT INTO Cinematographer
+                                VALUES (22375, 'Greig Fraser', 'M', '50')
+                                    INSERT INTO Person 
+                                        VALUES (78956 , 'Michael', '', 'Giacchino', 1967-10-10, 'M', '58', 09676)
+                                                INSERT INTO Composer
+                                                    VALUES (16140, 'Michael Giacchino', 'M', '58' )
+                                                            INSERT INTO Genre
+                                                                VALUES  (12356, 'Action')
+                                                                        INSERT INTO Reviews 
+                                                                                VALUES ( '4', 'A very nice retelling of a well known story', 12345)
 
         
 INSERT INTO Film
