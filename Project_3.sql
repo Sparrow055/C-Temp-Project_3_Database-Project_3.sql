@@ -57,13 +57,15 @@ CREATE TABLE Cinematographer (
     CinematographerID   NUMBER(5) CONSTRAINT Cinematographer_CinematographerID_PK PRIMARY KEY,
     Name    VARCHAR(50),
     Sex     CHAR(1) CONSTRAINT Cinematographer_Sex_cc CHECK(Sex = 'M' OR Sex = 'F'),
-    Age     NUMBER(2) CONSTRAINT Cinematographer_age_cc CHECK((Age >= 18) and (Age <= 99)));
+    Age     NUMBER(2) CONSTRAINT Cinematographer_age_cc CHECK((Age >= 18) and (Age <= 99))
+    RelativeID NUMBER(5));
 
 CREATE TABLE Composer (
     ScoreID     NUMBER(5) CONSTRAINT Composer_ScoreID_PK PRIMARY KEY,
     Name        VARCHAR(50),
     Sex         CHAR(1) CONSTRAINT Composer_Sex_cc CHECK(Sex = 'M' OR Sex = 'F'),
-    Age         NUMBER(2) CONSTRAINT Composer_age_cc CHECK((Age >= 18) and (Age <= 99)));
+    Age         NUMBER(2) CONSTRAINT Composer_age_cc CHECK((Age >= 18) and (Age <= 99))
+    RelativeID NUMBER(5));
 
 CREATE TABLE Relatives (
     RelativeID    NUMBER(5) CONSTRAINT Relative_RelativeID_PK PRIMARY KEY,
@@ -118,6 +120,14 @@ REFERENCES Film(MovieID);
 ALTER TABLE Reviews 
 ADD CONSTRAINT reviews_movieID_fk FOREIGN KEY(MovieID)
 REFERENCES Film(MovieID);
+
+ALTER TABLE Cinematographer 
+ADD CONSTRAINT cinematographer_relativeID_fk FOREIGN KEY(RelativeID)
+REFERENCES Relative(RelativeID);
+
+ALTER TABLE Composer 
+ADD CONSTRAINT composer_relativeID_fk FOREIGN KEY(RelativeID)
+REFERENCES Relative(RelativeID);
 
 
 INSERT INTO Film
