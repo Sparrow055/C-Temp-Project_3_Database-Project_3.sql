@@ -135,20 +135,23 @@ VALUES( 'Batman', 12356, '2:56', 13345, 22375, 12349);
     INSERT INTO Person 
         VALUES (13345, 'Matt', 'G', 'Reeves', 1966-4-27, 'M', '59', 09451) /* Has a wife and kid*/
          INSERT INTO Relatives
-                VALUES (09576, ' Melinda Wang', 1973-5-29, 52, 'F', 'Wife')
+                VALUES (09451, ' Melinda Wang', 1973-5-29, 52, 'F', 'Wife')
         INSERT INTO Direrctor
             VALUES 13345
                   INSERT INTO Producer
                         VALUES  13345
                      INSERT INTO Person 
-                        VALUES (22375 , 'Greig', '', 'Fraser', 1966-10-03, 'M', '50', 09576)  /* Has a wife and kids*/
-                                   
+                        VALUES (22375 , 'Greig', '', 'Fraser', 1975-10-03, 'M', '50', 09576)  /* Has a wife and kids*/
+                                   INSERT INTO Relatives
+                                        VALUES (09576, ' Jodie Fried', 1977-5-19, 49, 'F', 'Wife')
                             INSERT INTO Cinematographer
-                                VALUES (22375, 'Greig Fraser', 'M', '50')
+                                VALUES (22375, 'Greig Fraser', 'M', '50', 09576)
                                     INSERT INTO Person 
                                         VALUES (78956 , 'Michael', '', 'Giacchino', 1967-10-10, 'M', '58', 09676)
+                                                         INSERT INTO Relatives
+                                                                VALUES (09676, ' Maria Giacchino', 1969-8-27, 56, 'F', 'Wife')
                                                 INSERT INTO Composer
-                                                    VALUES (12349, 'Michael Giacchino', 'M', '58' )
+                                                    VALUES (12349, 'Michael Giacchino', 'M', '58', 09676 )
                                                             INSERT INTO Genre
                                                                 VALUES  (12356, 'Action')
                                                                         INSERT INTO Reviews 
