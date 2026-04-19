@@ -197,7 +197,7 @@ VALUES( 'Justice League', 81972, '2:00', 81973, 81372 , 71972);
     INSERT INTO Person
             VALUES (81973 , 'Zack', 'E', 'Snyder', '1966-3-01', 'M', 60, 05747) ;
         INSERT INTO Relatives
-                 VALUES (05747, ' Deborah Snyder', '1969-03-13', 57, 'F', 'Wife');
+                 VALUES (05747, ' Deborah Snyder', '13-MAR-1969', 57, 'F', 'Wife');
         INSERT INTO Director
             VALUES (81973);
                   INSERT INTO Producer
@@ -210,7 +210,7 @@ VALUES( 'Justice League', 81972, '2:00', 81973, 81372 , 71972);
                                     INSERT INTO Person 
                                         VALUES (75775 , 'Danny', NULL, 'Elfman', '1953-05-29', 'M', 72, 07684);
                                                        INSERT INTO Relatives
-                                                             VALUES (07684, ' Bridget Fonda', '1964-01-27', 62, 'F', 'Wife');
+                                                             VALUES (07684, ' Bridget Fonda', '27-JAN-1964', 62, 'F', 'Wife');
                                                 INSERT INTO Composer
                                                     VALUES (71972, 'Danny Elfman', 'M', 72,07684 );
                                                             INSERT INTO Genre
@@ -236,7 +236,7 @@ INSERT INTO Person
                                     INSERT INTO Person 
                                         VALUES (76566 , 'Tyler', NULL, 'Bates', '1965-06-05', 'M', 72, 07687);
                                                       INSERT INTO Relatives
-                                                                 VALUES (07687, 'Lola Bates', '1967-02-11', 57, 'F', 'Wife');
+                                                                 VALUES (07687, 'Lola Bates', '11-FEB-1967', 57, 'F', 'Wife');
                                                 INSERT INTO Composer
                                                     VALUES (29889, 'Tyler Bates', 'M', 60, 07687 );
                                                             INSERT INTO Genre
@@ -328,7 +328,7 @@ VALUES( 'Iron Man ', 11361  , '2:06', 11335 , 14645  , 15855);
 INSERT INTO Person
             VALUES (11335 , 'Jonathan ', 'K', 'Favreau', '1966-10-19', 'M', 59, 06550) ;
         INSERT INTO Relatives
-                 VALUES (06550, ' Joya Tillem', '1970-05-14', 55, 'F', 'Wife');
+                 VALUES (06550, ' Joya Tillem', '14-MAY-1970', 55, 'F', 'Wife');
         INSERT INTO Director
             VALUES (11335);
                   INSERT INTO Producer
@@ -336,13 +336,13 @@ INSERT INTO Person
                      INSERT INTO Person 
                         VALUES (14645 , 'Matthew ', 'J', 'Libatique ', '1968-07-19', 'M', 57, 04474)  ;
                                      INSERT INTO Relatives
-                                                VALUES (04474, 'Mary-Ellen Libatique ','1970-07-09', 55, 'F', 'Wife');
+                                                VALUES (04474, 'Mary-Ellen Libatique ','09-JUL-1970', 55, 'F', 'Wife');
                             INSERT INTO Cinematographer
                                 VALUES (14645, 'Matthew José Libatique', 'M', '57', 04474);
                                     INSERT INTO Person 
                                                        VALUES (78950 , 'Ramin', NULL, 'Djawadi', '1974-07-19', 'M', 51, 04220);
                                                                  INSERT INTO Relatives
-                                                                         VALUES (04220, 'Jennifer Hawks', '1974-06-14', 55, 'F', 'Wife');
+                                                                         VALUES (04220, 'Jennifer Hawks', '04-JUN-1974', 55, 'F', 'Wife');
                                                     INSERT INTO Composer
                                                         VALUES (15855, 'Ramin Djawadi', 'M', 61,04220 );
                                                              INSERT INTO Genre
