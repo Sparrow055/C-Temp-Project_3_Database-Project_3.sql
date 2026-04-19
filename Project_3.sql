@@ -160,7 +160,22 @@ VALUES( 'The Batman', 12345, '2:56', 13345, 22375, 12349);
                                                                 VALUES  (12345, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( 4, 12345);
-
+                                                                                             INSERT INTO Person 
+                                                                                                VALUES (63636, 'Robert', 'D', 'Pattinson', '1986-05-13', 'M', 39, 02345);
+                                                                                                            INSERT INTO Relatives 
+                                                                                                                    VALUES (02345, 'Suki Waterhouse', '1992-01-05', 34, 'F', 'Wife')
+                                                                                                                        INSERT INTO Actor
+                                                                                                                                VALUES (84838);
+                                                                                                                                        INSERT INTO StarIN
+                                                                                                                                                VALUES (63636, 12345);
+                                                                                                                                                          INSERT INTO Person 
+                                                                                                                                                                VALUES (63637, 'Zoe', 'I', 'Kravitz', '1988-12-01', 'F', 37, 02346);
+                                                                                                                                                                        INSERT INTO Relatives 
+                                                                                                                                                                            VALUES (02346, 'Lenny Kravitz', '1964-05-26', 61, 'M', 'Father')
+                                                                                                                                                                                INSERT INTO Actor
+                                                                                                                                                                                        VALUES (84838);
+                                                                                                                                                                                            INSERT INTO StarIN
+                                                                                                                                                                                                    VALUES (63636, 12345);
         
 INSERT INTO Film
 VALUES( 'Superman', 91921, '2:09', 25962, 61915, 91923);
