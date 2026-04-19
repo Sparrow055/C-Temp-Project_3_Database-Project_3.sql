@@ -375,6 +375,22 @@ INSERT INTO Person
                                                                 VALUES  (92770, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( 5, 92770);
+                                                                                     INSERT INTO Person 
+                                                                                                VALUES (54484, 'Christopher ', 'M', 'Pratt', '1979-06-29', 'M', 46, 07830);
+                                                                                                            INSERT INTO Relatives 
+                                                                                                                    VALUES (07830, 'Katherine Schwarzenegger', '1989-12-13', 36, 'F', 'Wife')
+                                                                                                                        INSERT INTO Actor
+                                                                                                                                VALUES (54484);
+                                                                                                                                        INSERT INTO StarIN
+                                                                                                                                                VALUES (54484, 92770);
+                                                                                                                                                          INSERT INTO Person 
+                                                                                                                                                                VALUES (68637, 'Zoe ', 'Y', 'Saldana', '1978-06-19', 'F', 47, 03833);
+                                                                                                                                                                        INSERT INTO Relatives 
+                                                                                                                                                                            VALUES (03833, 'Marco Perego-Saldaña', '1979-06-26', 47, 'M', 'Husband')
+                                                                                                                                                                                INSERT INTO Actor
+                                                                                                                                                                                        VALUES (68637);
+                                                                                                                                                                                            INSERT INTO StarIN
+                                                                                                                                                                                                    VALUES (68637, 92770);
 
 
 
@@ -403,6 +419,23 @@ INSERT INTO Person
                                                                 VALUES  (99771, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( 5, 99771);
+                                                                                        INSERT INTO Person 
+                                                                                                VALUES (54484, 'Christopher ', 'M', 'Pratt', '1979-06-29', 'M', 46, 07830);
+                                                                                                            INSERT INTO Relatives 
+                                                                                                                    VALUES (07830, 'Katherine Schwarzenegger', '1989-12-13', 36, 'F', 'Wife')
+                                                                                                                        INSERT INTO Actor
+                                                                                                                                VALUES (54484);
+                                                                                                                                        INSERT INTO StarIN
+                                                                                                                                                VALUES (54484, 99771);
+                                                                                                                                                          INSERT INTO Person 
+                                                                                                                                                                VALUES (68637, 'Zoe ', 'Y', 'Saldana', '1978-06-19', 'F', 47, 03833);
+                                                                                                                                                                        INSERT INTO Relatives 
+                                                                                                                                                                            VALUES (03833, 'Marco Perego-Saldaña', '1979-06-26', 47, 'M', 'Husband')
+                                                                                                                                                                                INSERT INTO Actor
+                                                                                                                                                                                        VALUES (68637);
+                                                                                                                                                                                            INSERT INTO StarIN
+                                                                                                                                                                                                    VALUES (68637, 99771);
+
 
 INSERT INTO Film
 VALUES( 'Iron Man ', 11361  , '2:06', 11335 , 14645  , 15855);
@@ -430,6 +463,21 @@ INSERT INTO Person
                                                                 VALUES  (11361, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( 4, 11361);
+                                                                                               INSERT INTO Person 
+                                                                                                VALUES (44484, 'Robert ', 'J', 'Downey Jr.', '1965-04-04', 'M', 61, 06631);
+                                                                                                            INSERT INTO Relatives 
+                                                                                                                    VALUES (06631, 'Susan Downey', '1973-11-06', 52, 'F', 'Wife')
+                                                                                                                        INSERT INTO Actor
+                                                                                                                                VALUES (44484);
+                                                                                                                                        INSERT INTO StarIN
+                                                                                                                                                VALUES (44484, 11361);
+                                                                                                                                                          VALUES (11335 , 'Jonathan ', 'K', 'Favreau', '1966-10-19', 'M', 59, 06550) ;
+                                                                                                                                                                            INSERT INTO Relatives
+                                                                                                                                                                                 VALUES (06550, ' Joya Tillem', '14-MAY-1970', 55, 'F', 'Wife');
+                                                                                                                                                                                INSERT INTO Actor
+                                                                                                                                                                                        VALUES (11335);
+                                                                                                                                                                                            INSERT INTO StarIN
+                                                                                                                                                                                                    VALUES (11335, 11361);
 INSERT INTO Film
 VALUES( 'Iron Man 2 ', 11362  , '2:06', 11335 , 14645 , 15854);
 INSERT INTO Person
@@ -456,6 +504,21 @@ INSERT INTO Person
                                                                 VALUES  (11362, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( 4, 11362);
+                                                                                           INSERT INTO Person 
+                                                                                                VALUES (44484, 'Robert ', 'J', 'Downey Jr.', '1965-04-04', 'M', 61, 06631);
+                                                                                                            INSERT INTO Relatives 
+                                                                                                                    VALUES (06631, 'Susan Downey', '1973-11-06', 52, 'F', 'Wife')
+                                                                                                                        INSERT INTO Actor
+                                                                                                                                VALUES (44484);
+                                                                                                                                        INSERT INTO StarIN
+                                                                                                                                                VALUES (44484, 11361);
+                                                                                                                                                          VALUES (11335 , 'Jonathan ', 'K', 'Favreau', '1966-10-19', 'M', 59, 06550) ;
+                                                                                                                                                                            INSERT INTO Relatives
+                                                                                                                                                                                 VALUES (06550, ' Joya Tillem', '14-MAY-1970', 55, 'F', 'Wife');
+                                                                                                                                                                                INSERT INTO Actor
+                                                                                                                                                                                        VALUES (11335);
+                                                                                                                                                                                            INSERT INTO StarIN
+                                                                                                                                                                                                    VALUES (11335, 11361);
 
 INSERT INTO Film
 VALUES( 'Iron Man 3', 11363  , '2:06', 11335 , 14645 , 15853);
@@ -483,3 +546,18 @@ INSERT INTO Person
                                                                 VALUES  (11363, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( 4, 11363);
+                                                                                           INSERT INTO Person 
+                                                                                                VALUES (44484, 'Robert ', 'J', 'Downey Jr.', '1965-04-04', 'M', 61, 06631);
+                                                                                                            INSERT INTO Relatives 
+                                                                                                                    VALUES (06631, 'Susan Downey', '1973-11-06', 52, 'F', 'Wife')
+                                                                                                                        INSERT INTO Actor
+                                                                                                                                VALUES (44484);
+                                                                                                                                        INSERT INTO StarIN
+                                                                                                                                                VALUES (44484, 11361);
+                                                                                                                                                          VALUES (11335 , 'Jonathan ', 'K', 'Favreau', '1966-10-19', 'M', 59, 06550) ;
+                                                                                                                                                                            INSERT INTO Relatives
+                                                                                                                                                                                 VALUES (06550, ' Joya Tillem', '14-MAY-1970', 55, 'F', 'Wife');
+                                                                                                                                                                                INSERT INTO Actor
+                                                                                                                                                                                        VALUES (11335);
+                                                                                                                                                                                            INSERT INTO StarIN
+                                                                                                                                                                                                    VALUES (11335, 11361);
