@@ -159,7 +159,7 @@ VALUES( 'The Batman', 12345, '2:56', 13345, 22375, 12349);
 
         
 INSERT INTO Film
-VALUES( 'Superman', 91921, '2:09', 25962, 61921, 91923);
+VALUES( 'Superman', 91921, '2:09', 25962, 61915, 91923);
     INSERT INTO Person
             VALUES (25962 , 'James', 'F', 'Gunn', '1966-08-06', 'M', '59', 09565);
         INSERT INTO Relatives
@@ -173,7 +173,7 @@ VALUES( 'Superman', 91921, '2:09', 25962, 61921, 91923);
                                     INSERT INTO Relatives
                                             VALUES (083874, ' Glynis Murray', '1968-6-17', 57, 'F', 'Wife');
                             INSERT INTO Cinematographer
-                                VALUES (61921, 'Henry Braham', 'M', '60',083874);
+                                VALUES (61915, 'Henry Braham', 'M', '60',083874);
                                     INSERT INTO Person 
                                         VALUES (78956 , 'John', NULL, 'Murphy', '1965-03-04', 'M', '61', NULL );
                                                   /* no apparent relative online*/ 
@@ -193,16 +193,16 @@ VALUES( 'Justice League', 81972, '2:00', 81973, 81372 , 71972);
     INSERT INTO Person
             VALUES (81973 , 'Zack', 'E', 'Snyder', '1966-3-01', 'M', '60', 05747) ;
         INSERT INTO Relatives
-                 VALUES (09565, ' Deborah Snyder', '1969-03-13', 57, 'F', 'Wife');
+                 VALUES (05747, ' Deborah Snyder', '1969-03-13', 57, 'F', 'Wife');
         INSERT INTO Director
             VALUES (81973);
                   INSERT INTO Producer
                         VALUES  (81973);
                      INSERT INTO Person 
-                        VALUES (61921 , 'Fabian', NULL, 'Wagner', '1978-10-30', 'M', '47', NULL) ;
+                        VALUES (61911 , 'Fabian', NULL, 'Wagner', '1978-10-30', 'M', '47', NULL) ;
                                      /* no apparent relative online*/ 
                             INSERT INTO Cinematographer
-                                VALUES (81372, 'Fabian Wagner', 'M', '47', 08764);
+                                VALUES (81372, 'Fabian Wagner', 'M', '47', NULL);
                                     INSERT INTO Person 
                                         VALUES (75775 , 'Danny', NULL, 'Elfman', '1953-05-29', 'M', '72', 07684);
                                                        INSERT INTO Relatives
@@ -217,15 +217,15 @@ VALUES( 'Justice League', 81972, '2:00', 81973, 81372 , 71972);
 INSERT INTO Film
 VALUES( '300', 23279 , '1:57', 26536, 25877 , 29889 );
 INSERT INTO Person
-            VALUES (26536 , 'Zack', 'E', 'Snyder', '1966-3-01', 'M', '60', 05747) ;
+            VALUES (26536 , 'Zack', 'E', 'Snyder', '1966-3-01', 'M', '60', 05746) ;
         INSERT INTO Relatives
-                 VALUES (09565, ' Deborah Snyder', '1969-03-13', 57, 'F', 'Wife');
+                 VALUES (05746, ' Deborah Snyder', '1969-03-13', 57, 'F', 'Wife');
         INSERT INTO Director
             VALUES (26536);
                   INSERT INTO Producer
                         VALUES  (26536);
                      INSERT INTO Person 
-                        VALUES (61921 , 'Larry', NULL, 'Fong', '1960-06-30', 'M', '65', NULL) ;
+                        VALUES (61910 , 'Larry', NULL, 'Fong', '1960-06-30', 'M', '65', NULL) ;
                                      
                             INSERT INTO Cinematographer
                                 VALUES (25877, 'Larry Fong', 'M', '65', NULL);
@@ -241,23 +241,23 @@ INSERT INTO Person
                                                                                 VALUES ( '3', 23279);
 
 INSERT INTO Film
-VALUES( 'Guardians of the Galaxy 3', 92778 , '2:29', 92644 , 93638 , 93464);
+VALUES( 'Guardians of the Galaxy 3', 92778 , '2:29', 92645 , 93638 , 93464);
 INSERT INTO Person
-            VALUES (25962 , 'James', 'F', 'Gunn', '1966-08-06', 'M', '59', 09565) ;
+            VALUES (92645 , 'James', 'F', 'Gunn', '1966-08-06', 'M', '59', 09563) ;
         INSERT INTO Relatives
-                 VALUES (09565, ' Jennifer Holland', '1987-09-09', 38, 'F', 'Wife');
+                 VALUES (09563, ' Jennifer Holland', '1987-09-09', 38, 'F', 'Wife');
         INSERT INTO Director
-            VALUES (92644);
+            VALUES (92645);
                   INSERT INTO Producer
-                        VALUES  (25962);
+                        VALUES  (92645);
                      INSERT INTO Person 
-                        VALUES (61921 , 'Henry', NULL, 'Braham', '1965-10-30', 'M', '60', 083874)  ;
+                        VALUES (61921 , 'Henry', NULL, 'Braham', '1965-10-30', 'M', '60', 08387)  ;
                                      INSERT INTO Relatives
-                                                VALUES (083874, 'Glynis Murray ', '1965-06-09', 38, 'F', 'Wife');
+                                                VALUES (08387, 'Glynis Murray ', '1965-06-09', 38, 'F', 'Wife');
                             INSERT INTO Cinematographer
-                                VALUES (93638, 'Henry Braham', 'M', '60', 083874);
+                                VALUES (93638, 'Henry Braham', 'M', '60', 08387);
                                     INSERT INTO Person 
-                                                       VALUES (78956 , 'John', NULL, 'Murphy', '1965-03-04', 'M', '61', NULL);
+                                                       VALUES (78954 , 'John', NULL, 'Murphy', '1965-03-04', 'M', '61', NULL);
                                                                 
                                                 INSERT INTO Composer
                                                     VALUES (93464, 'John Murphy', 'M', '61', NULL );
@@ -267,64 +267,64 @@ INSERT INTO Person
                                                                                 VALUES ( '5', 92778);
 
 INSERT INTO Film
-VALUES( 'Guardians of the Galaxy 2', 92778 , '2:17', 92645 , 93637  , 93466);
+VALUES( 'Guardians of the Galaxy 2', 92770 , '2:17', 92640 , 93637  , 93466);
 INSERT INTO Person
-            VALUES (25961 , 'James', 'F', 'Gunn', '1966-08-06', 'M', '59', 09565) ;
+            VALUES (92640 , 'James', 'F', 'Gunn', '1966-08-06', 'M', '59', 09564) ;
         INSERT INTO Relatives
-                 VALUES (09565, ' Jennifer Holland', '1987-09-09', 38, 'F', 'Wife');
+                 VALUES (09564, ' Jennifer Holland', '1987-09-09', 38, 'F', 'Wife');
         INSERT INTO Director
-            VALUES (92645);
+            VALUES (92640);
                   INSERT INTO Producer
-                        VALUES  (25962)
+                        VALUES  (92640);
                      INSERT INTO Person 
-                        VALUES (61920 , 'Henry', NULL, 'Braham', '1965-10-30', 'M', '60', 083874)  ;
+                        VALUES (61920 , 'Henry', NULL, 'Braham', '1965-10-30', 'M', '60', 08386)  ;
                                      INSERT INTO Relatives
-                                                VALUES (083874, 'Glynis Murray ', '1965-06-09', 38, 'F', 'Wife');
+                                                VALUES (08386, 'Glynis Murray ', '1965-06-09', 38, 'F', 'Wife');
                             INSERT INTO Cinematographer
-                                VALUES (93637, 'Henry Braham', 'M', '60', 083874);
+                                VALUES (93637, 'Henry Braham', 'M', '60', 08386);
                                     INSERT INTO Person 
                                                        VALUES (78955, 'John', NULL, 'Murphy', '1965-03-04', 'M', '61', NULL);
                                                                 
                                                 INSERT INTO Composer
                                                     VALUES (93466, 'John Murphy', 'M', '61' , NULL);
                                                             INSERT INTO Genre
-                                                                VALUES  (92778, 'Action');
+                                                                VALUES  (92770, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( '5', 92778);
 
 
 INSERT INTO Film
-VALUES( 'Guardians of the Galaxy ', 99778 , '2:01', 92646 , 93636  , 93467);
+VALUES( 'Guardians of the Galaxy ', 99771 , '2:01', 92641 , 93636  , 93467);
 INSERT INTO Person
-            VALUES (25960 , 'James', 'F', 'Gunn', '1966-08-06', 'M', '59', 09565) ;
+            VALUES (92641, 'James', 'F', 'Gunn', '1966-08-06', 'M', '59', 09565) ;
         INSERT INTO Relatives
-                 VALUES (09565, ' Jennifer Holland', '1987-09-09', 38, 'F', 'Wife');
+                 VALUES (09561, ' Jennifer Holland', '1987-09-09', 38, 'F', 'Wife');
         INSERT INTO Director
-            VALUES (92646);
+            VALUES (92641);
                   INSERT INTO Producer
-                        VALUES  (92646);
+                        VALUES  (92641);
                      INSERT INTO Person 
-                        VALUES (61919 , 'Henry', NULL, 'Braham', '1965-10-30', 'M', '60', 083874)  ;
+                        VALUES (61919 , 'Henry', NULL, 'Braham', '1965-10-30', 'M', '60', 08385)  ;
                                      INSERT INTO Relatives
-                                                VALUES (083874, 'Glynis Murray ', '1965-06-09', 38, 'F', 'Wife');
+                                                VALUES (08385, 'Glynis Murray ', '1965-06-09', 38, 'F', 'Wife');
                             INSERT INTO Cinematographer
-                                VALUES (93636, 'Henry Braham', 'M', '60', 083874);
+                                VALUES (93636, 'Henry Braham', 'M', '60', 08385);
                                     INSERT INTO Person 
                                                        VALUES (78954 , 'John', NULL, 'Murphy', '1965-03-04', 'M', '61', NULL);
                                                                 
                                                 INSERT INTO Composer
                                                     VALUES (93467, 'John Murphy', 'M', '61' , NULL);
                                                             INSERT INTO Genre
-                                                                VALUES  (99778, 'Action')
+                                                                VALUES  (99771, 'Action');
                                                                         INSERT INTO Reviews 
-                                                                                VALUES ( '5', 99778);
+                                                                                VALUES ( '5', 99771);
 
 INSERT INTO Film
 VALUES( 'Iron Man ', 11361  , '2:06', 11335 , 14645  , 15855);
 INSERT INTO Person
-            VALUES (45052 , 'Jonathan ', 'K', 'Favreau', '1966-10-19', 'M', '59', 06555) ;
+            VALUES (11335 , 'Jonathan ', 'K', 'Favreau', '1966-10-19', 'M', '59', 06550) ;
         INSERT INTO Relatives
-                 VALUES (06555, ' Joya Tillem', '1970-05-14', 55, 'F', 'Wife');
+                 VALUES (06550, ' Joya Tillem', '1970-05-14', 55, 'F', 'Wife');
         INSERT INTO Director
             VALUES (11335);
                   INSERT INTO Producer
@@ -336,19 +336,19 @@ INSERT INTO Person
                             INSERT INTO Cinematographer
                                 VALUES (14645, 'Matthew José Libatique', 'M', '57', 04474);
                                     INSERT INTO Person 
-                                                       VALUES (78950 , 'Ramin', NULL, 'Djawadi', '1974-07-19', 'M', '51', 04222);
+                                                       VALUES (78950 , 'Ramin', NULL, 'Djawadi', '1974-07-19', 'M', '51', 04220);
                                                                  INSERT INTO Relatives
-                                                                         VALUES (06555, 'Jennifer Hawks', '1974-06-14', 55, 'F', 'Wife');
+                                                                         VALUES (04220, 'Jennifer Hawks', '1974-06-14', 55, 'F', 'Wife');
                                                     INSERT INTO Composer
-                                                        VALUES (15855, 'Ramin Djawadi', 'M', '61',04222 );
+                                                        VALUES (15855, 'Ramin Djawadi', 'M', '61',04220 );
                                                              INSERT INTO Genre
                                                                 VALUES  (11361, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( '4', 11361);
 INSERT INTO Film
-VALUES( 'Iron Man 2 ', 11362  , '2:06', 11334 , 14644  , 15855);
+VALUES( 'Iron Man 2 ', 11362  , '2:06', 11334 , 14644  , 15854);
 INSERT INTO Person
-            VALUES (45054 , 'Jonathan ', 'K', 'Favreau', '1966-10-19', 'M', '59', 06555) ;
+            VALUES (11334 , 'Jonathan ', 'K', 'Favreau', '1966-10-19', 'M', '59', 06555) ;
         INSERT INTO Relatives
                  VALUES (06555, ' Joya Tillem', '1970-05-14', 55, 'F', 'Wife');
         INSERT INTO Director
@@ -356,44 +356,44 @@ INSERT INTO Person
                   INSERT INTO Producer
                         VALUES  (11334);
                      INSERT INTO Person 
-                        VALUES (61916 , 'Matthew ', 'J', 'Libatique ', '1968-07-19', 'M', '57', 04474)  ;
+                        VALUES (61916 , 'Matthew ', 'J', 'Libatique ', '1968-07-19', 'M', '57', 04473)  ;
                                      INSERT INTO Relatives
-                                                VALUES (04474, 'Mary-Ellen Libatique ', '1970-07-09', 55, 'F', 'Wife');
+                                                VALUES (04473, 'Mary-Ellen Libatique ', '1970-07-09', 55, 'F', 'Wife');
                             INSERT INTO Cinematographer
-                                VALUES (14644, 'Matthew José Libatique', 'M', '57', 04474);
+                                VALUES (14644, 'Matthew José Libatique', 'M', '57', 04473);
                                     INSERT INTO Person 
-                                                       VALUES (78940 , 'Ramin', NULL, 'Djawadi', '1974-07-19', 'M', '51', 04222);
+                                                       VALUES (78940 , 'Ramin', NULL, 'Djawadi', '1974-07-19', 'M', '51', 04221);
                                                                  INSERT INTO Relatives
-                                                                         VALUES (06555, 'Jennifer Hawks', '1974-06-14', 55, 'F', 'Wife');
+                                                                         VALUES (04221, 'Jennifer Hawks', '1974-06-14', 55, 'F', 'Wife');
                                                     INSERT INTO Composer
-                                                        VALUES (15855, 'Ramin Djawadi', 'M', '61',04222 );
+                                                        VALUES (15854, 'Ramin Djawadi', 'M', '61',04221 );
                                                              INSERT INTO Genre
                                                                 VALUES  (11362, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( '4', 11362);
 
 INSERT INTO Film
-VALUES( 'Iron Man 3', 11363  , '2:06', 11333 , 14644  , 15855);
+VALUES( 'Iron Man 3', 11363  , '2:06', 11333 , 14644  , 15853);
 INSERT INTO Person
-            VALUES (45000 , 'Jonathan ', 'K', 'Favreau', '1966-10-19', 'M', '59', 06555) ;
+            VALUES (11333 , 'Jonathan ', 'K', 'Favreau', '1966-10-19', 'M', '59', 06552) ;
         INSERT INTO Relatives
-                 VALUES (06555, ' Joya Tillem', '1970-05-14', 55, 'F', 'Wife');
+                 VALUES (06552, ' Joya Tillem', '1970-05-14', 55, 'F', 'Wife');
         INSERT INTO Director
             VALUES (11333);
                   INSERT INTO Producer
                         VALUES  (11333);
                      INSERT INTO Person 
-                        VALUES (61800 , 'Matthew ', 'J', 'Libatique ', '1968-07-19', 'M', '57', 04474)  ;
+                        VALUES (61800 , 'Matthew ', 'J', 'Libatique ', '1968-07-19', 'M', '57', 04472)  ;
                                      INSERT INTO Relatives
-                                                VALUES (04474, 'Mary-Ellen Libatique ', '1970-07-09', 55, 'F', 'Wife');
+                                                VALUES (04472, 'Mary-Ellen Libatique ', '1970-07-09', 55, 'F', 'Wife');
                             INSERT INTO Cinematographer
-                                VALUES (14643, 'Matthew José Libatique', 'M', '57', 04474);
+                                VALUES (14643, 'Matthew José Libatique', 'M', '57', 04472);
                                     INSERT INTO Person 
                                                        VALUES (78930 , 'Ramin', NULL, 'Djawadi', '1974-07-19', 'M', '51', 04222);
                                                                  INSERT INTO Relatives
-                                                                         VALUES (06555, 'Jennifer Hawks', '1974-06-14', 55, 'F', 'Wife');
+                                                                         VALUES (04222, 'Jennifer Hawks', '1974-06-14', 55, 'F', 'Wife');
                                                     INSERT INTO Composer
-                                                        VALUES (15855, 'Ramin Djawadi', 'M', '61',04222 );
+                                                        VALUES (15853, 'Ramin Djawadi', 'M', '61',04222 );
                                                              INSERT INTO Genre
                                                                 VALUES  (11363, 'Action');
                                                                         INSERT INTO Reviews 
