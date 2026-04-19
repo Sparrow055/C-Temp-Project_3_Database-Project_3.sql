@@ -471,6 +471,7 @@ INSERT INTO Person
                                                                                                                                 VALUES (44484);
                                                                                                                                         INSERT INTO StarIN
                                                                                                                                                 VALUES (44484, 11361);
+                                                                                                                                                        INSERT INTO Actor
                                                                                                                                                           VALUES (11335 , 'Jonathan ', 'K', 'Favreau', '19-OCT-1966', 'M', 59, 06550) ;
                                                                                                                                                                             INSERT INTO Relatives
                                                                                                                                                                                  VALUES (06550, ' Joya Tillem', '14-MAY-1970', 55, 'F', 'Wife');
@@ -512,6 +513,7 @@ INSERT INTO Person
                                                                                                                                 VALUES (44484);
                                                                                                                                         INSERT INTO StarIN
                                                                                                                                                 VALUES (44484, 11362);
+                                                                                                                                                    INSERT INTO Actor
                                                                                                                                                           VALUES (11335 , 'Jonathan ', 'K', 'Favreau', '19-OCT-1966', 'M', 59, 06550) ;
                                                                                                                                                                             INSERT INTO Relatives
                                                                                                                                                                                  VALUES (06550, ' Joya Tillem', '14-MAY-1970', 55, 'F', 'Wife');
@@ -553,6 +555,7 @@ INSERT INTO Person
                                                                                                                                 VALUES (44484);
                                                                                                                                         INSERT INTO StarIN
                                                                                                                                                 VALUES (44484, 11363);
+                                                                                                                                                        INSERT INTO Actor
                                                                                                                                                           VALUES (11335 , 'Jonathan ', 'K', 'Favreau', '19-OCT-1966', 'M', 59, 06550) ;
                                                                                                                                                                             INSERT INTO Relatives
                                                                                                                                                                                  VALUES (06550, ' Joya Tillem', '14-MAY-1970', 55, 'F', 'Wife');
