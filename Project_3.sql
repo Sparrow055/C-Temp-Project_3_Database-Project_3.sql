@@ -39,7 +39,7 @@ CREATE TABLE StarIN (
 CREATE TABLE Film (
     Title       VARCHAR(20),
     MovieID     NUMBER(5) CONSTRAINT Film_MovieID_PK PRIMARY KEY,
-    Runtime     TIME,
+    Runtime     VARCHAR(5),
     DirectorID  NUMBER(5),
     CinematographerID   NUMBER(5),
     ScoreID     NUMBER(5));
@@ -136,7 +136,7 @@ VALUES( 'The Batman', 12356, '2:56', 13345, 22375, 12349);
         VALUES (13345, 'Matt', 'G', 'Reeves', 1966-04-27, 'M', '59', 09451) 
          INSERT INTO Relatives
                 VALUES (09451, ' Melinda Wang', 1973-05-29, 52, 'F', 'Wife')
-        INSERT INTO Direrctor
+        INSERT INTO Director
             VALUES 13345
                   INSERT INTO Producer
                         VALUES  13345
@@ -164,7 +164,7 @@ VALUES( 'Superman', 91921, '2:09', 25962, 61921, 91923);
             VALUES (25962 , 'James', 'F', 'Gunn', 1966-08-06, 'M', '59', 09565) 
         INSERT INTO Relatives
                  VALUES (09565, ' Jennifer Holland', 1987-09-09, 38, 'F', 'Wife')
-        INSERT INTO Direrctor
+        INSERT INTO Director
             VALUES 25962
                   INSERT INTO Producer
                         VALUES  25962
@@ -194,7 +194,7 @@ VALUES( 'Justice League', 81972, '2:00', 81973, 81372 , 71972)
             VALUES (81973 , 'Zack', 'E', 'Snyder', 1966-3-01, 'M', '60', 05747) 
         INSERT INTO Relatives
                  VALUES (09565, ' Deborah Snyder', 1969-03-13, 57, 'F', 'Wife')
-        INSERT INTO Direrctor
+        INSERT INTO Director
             VALUES 81973
                   INSERT INTO Producer
                         VALUES  81973
@@ -220,7 +220,7 @@ INSERT INTO Person
             VALUES (26536 , 'Zack', 'E', 'Snyder', 1966-3-01, 'M', '60', 05747) 
         INSERT INTO Relatives
                  VALUES (09565, ' Deborah Snyder', 1969-03-13, 57, 'F', 'Wife')
-        INSERT INTO Direrctor
+        INSERT INTO Director
             VALUES 26536
                   INSERT INTO Producer
                         VALUES  26536
@@ -246,7 +246,7 @@ INSERT INTO Person
             VALUES (25962 , 'James', 'F', 'Gunn', 1966-08-06, 'M', '59', 09565) 
         INSERT INTO Relatives
                  VALUES (09565, ' Jennifer Holland', 1987-09-09, 38, 'F', 'Wife')
-        INSERT INTO Direrctor
+        INSERT INTO Director
             VALUES 25962
                   INSERT INTO Producer
                         VALUES  25962
@@ -272,7 +272,7 @@ INSERT INTO Person
             VALUES (25962 , 'James', 'F', 'Gunn', 1966-08-06, 'M', '59', 09565) 
         INSERT INTO Relatives
                  VALUES (09565, ' Jennifer Holland', 1987-09-09, 38, 'F', 'Wife')
-        INSERT INTO Direrctor
+        INSERT INTO Director
             VALUES 25962
                   INSERT INTO Producer
                         VALUES  25962
@@ -299,7 +299,7 @@ INSERT INTO Person
             VALUES (25962 , 'James', 'F', 'Gunn', 1966-08-06, 'M', '59', 09565) 
         INSERT INTO Relatives
                  VALUES (09565, ' Jennifer Holland', 1987-09-09, 38, 'F', 'Wife')
-        INSERT INTO Direrctor
+        INSERT INTO Director
             VALUES 25962
                   INSERT INTO Producer
                         VALUES  25962
@@ -325,7 +325,7 @@ INSERT INTO Person
             VALUES (45054 , 'Jonathan ', 'K', 'Favreau', 1966-10-19, 'M', '59', 06555) 
         INSERT INTO Relatives
                  VALUES (06555, ' Joya Tillem', 1970-05-14, 55, 'F', 'Wife')
-        INSERT INTO Direrctor
+        INSERT INTO Director
             VALUES 45054
                   INSERT INTO Producer
                         VALUES  45054
@@ -351,7 +351,7 @@ INSERT INTO Person
             VALUES (45054 , 'Jonathan ', 'K', 'Favreau', 1966-10-19, 'M', '59', 06555) 
         INSERT INTO Relatives
                  VALUES (06555, ' Joya Tillem', 1970-05-14, 55, 'F', 'Wife')
-        INSERT INTO Direrctor
+        INSERT INTO Director
             VALUES 45054
                   INSERT INTO Producer
                         VALUES  45054
@@ -378,7 +378,7 @@ INSERT INTO Person
             VALUES (45054 , 'Jonathan ', 'K', 'Favreau', 1966-10-19, 'M', '59', 06555) 
         INSERT INTO Relatives
                  VALUES (06555, ' Joya Tillem', 1970-05-14, 55, 'F', 'Wife')
-        INSERT INTO Direrctor
+        INSERT INTO Director
             VALUES 45054
                   INSERT INTO Producer
                         VALUES  45054
