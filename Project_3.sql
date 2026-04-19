@@ -165,7 +165,7 @@ VALUES( 'The Batman', 12345, '2:56', 13345, 22375, 12349);
                                                                                                             INSERT INTO Relatives 
                                                                                                                     VALUES (02345, 'Suki Waterhouse', '1992-01-05', 34, 'F', 'Wife')
                                                                                                                         INSERT INTO Actor
-                                                                                                                                VALUES (84838);
+                                                                                                                                VALUES (63636);
                                                                                                                                         INSERT INTO StarIN
                                                                                                                                                 VALUES (63636, 12345);
                                                                                                                                                           INSERT INTO Person 
@@ -173,9 +173,9 @@ VALUES( 'The Batman', 12345, '2:56', 13345, 22375, 12349);
                                                                                                                                                                         INSERT INTO Relatives 
                                                                                                                                                                             VALUES (02346, 'Lenny Kravitz', '1964-05-26', 61, 'M', 'Father')
                                                                                                                                                                                 INSERT INTO Actor
-                                                                                                                                                                                        VALUES (84838);
+                                                                                                                                                                                        VALUES (63637);
                                                                                                                                                                                             INSERT INTO StarIN
-                                                                                                                                                                                                    VALUES (63636, 12345);
+                                                                                                                                                                                                    VALUES (63637, 12345);
         
 INSERT INTO Film
 VALUES( 'Superman', 91921, '2:09', 25962, 61915, 91923);
@@ -202,6 +202,22 @@ VALUES( 'Superman', 91921, '2:09', 25962, 61915, 91923);
                                                                 VALUES  (91921, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( 5, 91921);
+                                                                                            INSERT INTO Person 
+                                                                                                VALUES (87855, 'David', 'P', 'Corenswet', '1993-07-08', 'M', 32, 07843);
+                                                                                                            INSERT INTO Relatives 
+                                                                                                                    VALUES (07843, 'Julia Best Warner', '1992-02-05', 33, 'F', 'Wife')
+                                                                                                                        INSERT INTO Actor
+                                                                                                                                VALUES (87855);
+                                                                                                                                        INSERT INTO StarIN
+                                                                                                                                                VALUES (87855, 91921);
+                                                                                                                                                          INSERT INTO Person 
+                                                                                                                                                                VALUES (63637, 'Nicholas ', 'C', 'Hoult', '1989-12-07', 'M', 36, 08933);
+                                                                                                                                                                        INSERT INTO Relatives 
+                                                                                                                                                                            VALUES (08933, 'Bryana Holly', '1990-08-26', 35, 'F', 'Wife')
+                                                                                                                                                                                INSERT INTO Actor
+                                                                                                                                                                                        VALUES (63637);
+                                                                                                                                                                                            INSERT INTO StarIN
+                                                                                                                                                                                                    VALUES (63637, 91921);
 
 
 
@@ -232,6 +248,23 @@ VALUES( 'Justice League', 81972, '2:00', 81973, 81372 , 71972);
                                                                 VALUES  (81972, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( 1, 81972);
+                                                                                         INSERT INTO Person 
+                                                                                                VALUES (57484, 'Benjamin ', 'G', 'Affleck', '1972-08-05', 'M', 53, 07844);
+                                                                                                            INSERT INTO Relatives 
+                                                                                                                    VALUES (07843, 'Jennifer Lopez', '1969-07-05', 56, 'F', 'Wife')
+                                                                                                                        INSERT INTO Actor
+                                                                                                                                VALUES (57484);
+                                                                                                                                        INSERT INTO StarIN
+                                                                                                                                                VALUES (57484, 81972);
+                                                                                                                                                          INSERT INTO Person 
+                                                                                                                                                                VALUES (63637, 'Henry ', 'W', 'Cavill', '1983-05-05', 'M', 42, 08833);
+                                                                                                                                                                        INSERT INTO Relatives 
+                                                                                                                                                                            VALUES (08833, 'Natalie Viscuso', '1990-03-26', 35, 'F', 'Wife')
+                                                                                                                                                                                INSERT INTO Actor
+                                                                                                                                                                                        VALUES (63637);
+                                                                                                                                                                                            INSERT INTO StarIN
+                                                                                                                                                                                                    VALUES (63637, 81972);
+
 
 INSERT INTO Film
 VALUES( '300', 23279 , '1:57', 81973, 25877 , 29889 );
@@ -258,6 +291,22 @@ INSERT INTO Person
                                                                 VALUES  (23279, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( 3, 23279);
+                                                                                          INSERT INTO Person 
+                                                                                                VALUES (57480, 'Gerard ', 'G', 'Affleck', '1969-11-13', 'M', 56, NULL);
+                                                                                                            INSERT INTO Relatives 
+                                                                                                                  /*no apparent relatives online */
+                                                                                                                        INSERT INTO Actor
+                                                                                                                                VALUES (57480);
+                                                                                                                                        INSERT INTO StarIN
+                                                                                                                                                VALUES (57480, 23279);
+                                                                                                                                                          INSERT INTO Person 
+                                                                                                                                                                VALUES (63633, 'David ', NULL, 'Wenham', '1965-08-05', 'M', 60, 05843);
+                                                                                                                                                                        INSERT INTO Relatives 
+                                                                                                                                                                            VALUES (05843, 'Kate Agnew', '1964-04-26', 61, 'F', 'Wife')
+                                                                                                                                                                                INSERT INTO Actor
+                                                                                                                                                                                        VALUES (63633);
+                                                                                                                                                                                            INSERT INTO StarIN
+                                                                                                                                                                                                    VALUES (63633, 23279);
 
 INSERT INTO Film
 VALUES( 'Guardians of the Galaxy 3', 92778 , '2:29', 25962 , 61915 , 93464);
@@ -284,6 +333,22 @@ INSERT INTO Person
                                                                 VALUES  (92778, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( 5, 92778);
+                                                                                          INSERT INTO Person 
+                                                                                                VALUES (54484, 'Christopher ', 'M', 'Pratt', '1979-06-29', 'M', 46, 07830);
+                                                                                                            INSERT INTO Relatives 
+                                                                                                                    VALUES (07830, 'Katherine Schwarzenegger', '1989-12-13', 36, 'F', 'Wife')
+                                                                                                                        INSERT INTO Actor
+                                                                                                                                VALUES (54484);
+                                                                                                                                        INSERT INTO StarIN
+                                                                                                                                                VALUES (54484, 92778);
+                                                                                                                                                          INSERT INTO Person 
+                                                                                                                                                                VALUES (68637, 'Zoe ', 'Y', 'Saldana', '1978-06-19', 'F', 47, 03833);
+                                                                                                                                                                        INSERT INTO Relatives 
+                                                                                                                                                                            VALUES (03833, 'Marco Perego-Saldaña', '1979-06-26', 47, 'M', 'Husband')
+                                                                                                                                                                                INSERT INTO Actor
+                                                                                                                                                                                        VALUES (68637);
+                                                                                                                                                                                            INSERT INTO StarIN
+                                                                                                                                                                                                    VALUES (68637, 92778);
 
 INSERT INTO Film
 VALUES( 'Guardians of the Galaxy 2', 92770 , '2:17', 25962 , 61915 , 93466);
@@ -310,6 +375,7 @@ INSERT INTO Person
                                                                 VALUES  (92770, 'Action');
                                                                         INSERT INTO Reviews 
                                                                                 VALUES ( 5, 92770);
+
 
 
 INSERT INTO Film
